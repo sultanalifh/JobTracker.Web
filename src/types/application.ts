@@ -9,10 +9,23 @@ export interface JobApplicationResponse {
 }
 
 export interface GetApplicationRequest {
-  page: number,
-  pageSize: number,
-  status?: string,
-  keyword?: string
+  page: number;
+  pageSize: number;
+  status?: string;
+  keyword?: string;
+}
+
+export interface CreateApplicationRequest {
+  company: string;
+  position: string;
+  siteLocation: string;
+}
+
+export interface UpdateJobApplicationRequest {
+  company: string;
+  position: string;
+  siteLocation: string;
+  status: string;
 }
 
 export interface JobApplicationPaginationResponse {
